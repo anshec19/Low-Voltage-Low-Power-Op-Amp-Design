@@ -47,6 +47,15 @@ The use of indirect feedback compensation ensures that the high gain from the co
 
 ![alt text](https://github.com/user-attachments/assets/b7fe89d5-a35b-4087-a5e1-82c4bfe2f921)
 
+# Technology used : 
+
+180nm
+
+# Size of transistors 
+
+![image](https://github.com/user-attachments/assets/0fa6166c-a29c-426f-8b1a-4723fbe65f5f)
+
+
 # Design Calculations:
 
 # Gain
