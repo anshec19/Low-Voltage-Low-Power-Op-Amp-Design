@@ -48,41 +48,50 @@ The use of indirect feedback compensation ensures that the high gain from the co
 ![alt text](https://github.com/user-attachments/assets/b7fe89d5-a35b-4087-a5e1-82c4bfe2f921)
 # Design Calculations:
 
-* Assumptions and Values used:
-  * Single ended output is taken
-  * M1 and M2 are identical
-  * M3 and M4 are identical
-  * Higher current flows in outer circuit to provide high swing, than in the inner circuit
-  * µpCox = 50 µAV-2 	   and          µnCox = 100 µAV-2
-  * λp = 0.052 V-1                       and          λn = 0.011 V-1
-  * Vthp = -0.4 V	                      and          Vthn = 0.4 V
-  * Av1 = Vx/Vin	   	   and	  Av2 = Vout/Vx
-  * Open Loop Gain = Av = Av1 x Av2
+# Gain
 
-* Power = 8mW
-* Vdd = 3.3V
-* Id = 8mW/3.3V = 2.424242 mA
+The open-loop gain of an op-amp is the amplification provided without any feedback applied to the circuit. The simulation result of the open-loop gain is shown in fig. The open-loop gain of the proposed op-amp is 104.27 dB, demonstrating high amplification capability, which is crucial for accurately amplifying low-amplitude heart signals in the intended medical application.
+![image](https://github.com/user-attachments/assets/30abac5e-c2aa-4092-8ae5-56257a047633)
 
-![alt text](https://github.com/nikhil1198/2-Stage-Operational-Amplifier/blob/master/calc.JPG)
 
-# LTSpice Simulation Results:
-* Input:
+# CMRR
 
-![alt text](https://github.com/nikhil1198/2-Stage-Operational-Amplifier/blob/master/input.JPG)
+The common mode rejection ratio (cmrr). The high cmrr is very useful in types of equipment like instrumentation devices. The cmrr in db is derived from the following equation. The cmrr of the op-amp is 83.547 db @ 10 hz. 
+Ad (differantial gain) = 2502.33
+Acm (common mode gain) = 0.166328
+CMRR (dB) = 20log(Ad/Acm)
+                    = 83.547 db
 
-* Operation Point Analysis:
+# Slew Rate 
 
-![alt text](https://github.com/nikhil1198/2-Stage-Operational-Amplifier/blob/master/op1.JPG)        ![alt text](https://github.com/nikhil1198/2-Stage-Operational-Amplifier/blob/master/op2.JPG)
+The slew rate of an op-amp is the rate of change in output voltage affected by a step-change in the input. The simulation result of the slew rate is shown in fig. The slew rate of the proposed op-amp is 60.51 V/ms. 
+![image](https://github.com/user-attachments/assets/046a21a7-c30f-48ba-abb7-122ba6b1c73a)
 
-* Frequency Response: 
+# Phase Margin 
 
-  * The frequency response (Bode Plot curve) of the two stage op amp simulated is similar to a single pole one stage op amp in the required bandwidth (operation region)
-  * The second pole occurs at 800MHz(P2=gm6/Cl , approx.) which in insignificant to our amplifier operation.
-  * The only zero occurring at Z1=gm6/Cc  because of Miller capacitor introduced(Cc) is at 1.25 GHz(approx.) which is also insignificant to our operation.
-  * Hence the Bode plot is as shown and is equivalent to a one pole system till a few hundred MHz  (until we have significant gain)
+The phase margin of an op-amp is a measure of the stability of the amplifier, indicating how close the system is to oscillation. The simulation result of the phase margin is shown in fig. The phase margin of the proposed op-amp is 72 degrees. And gain bandwidth product is 240KHz!
+![image](https://github.com/user-attachments/assets/47d7c6ec-b0ad-4f50-9c51-4536d6dffc0d)
 
-![alt text](https://github.com/nikhil1198/2-Stage-Operational-Amplifier/blob/master/out123.JPG)
- 
+# Gain Margin 
+
+The gain margin of an op-amp represents the amount of gain increase required to bring the system to the verge of instability. The simulation result of the gain margin is shown in fig. The gain margin of the proposed op-amp is 5.2 dB.
+![image](https://github.com/user-attachments/assets/a468c1a4-fb93-4199-9722-ef950639182a)
+
+# Noise performance analysis
+
+The noise performance of the op-amp was evaluated for low-frequency signals. The output noise was measured to be 3.6 uV/Hz½ at 1 Hz, indicating low noise levels suitable for ECG applications. This low output noise ensures minimal distortion when amplifying weak biomedical signals, particularly in the lower frequency range crucial for heart signal processing.
+![image](https://github.com/user-attachments/assets/7bf26eca-5963-4fde-98b5-bcf4ab7504ec)
+
+# Power Dissipation
+
+The power dissipation of the proposed Op-amp is a critical parameter that indicates the amount of power converted into heat during its operation. The measured power dissipation is 1.24 uW, highlighting its low power consumption. This characteristic makes the op-amp ideal for battery-operated devices and ensures it is suitable for low-power applications such as ECG signal amplification. In these applications, minimizing thermal noise is essential for enhancing signal integrity, making the proposed op-amp an excellent choice for sensitive medical instrumentation.
+
+
+
+
+
+
+
 # Conclusion:
 
 * A common “workhorse” opamp for medium performance applications.
