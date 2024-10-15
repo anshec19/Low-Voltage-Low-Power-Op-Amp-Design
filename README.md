@@ -1,22 +1,16 @@
 # Low-Voltage-Low-Power-Op-Amp-Design
 This project focuses on designing a low-voltage, low-power operational amplifier using composite cascode architecture and indirect feedback compensation. The design leverages subthreshold operation to minimize power consumption, making it suitable for applications like ECG signal amplification.
-# Objectives: 
+# Introduction: 
 
-* Complete designs of 2 Stage OP Amps with specifications :
-* Open loop gain = 10^6 = 120dB
-* Bandwidth = 50 MHz
-* Power Voltage Supply (Vdd) = 3.3 V
-* Max. Output Swing = Vdd/4 = 0.825 V
-* Slew Rate (V/μs) = 1
-* Power = 8 mW
+In recent years, the demand for low-voltage and low-power portable electronic devices has surged. Operational amplifiers (op-amps) are critical components in analog circuits, especially in applications such as biomedical signal processing. However, designing op-amps to operate under low-voltage and low-power conditions presents significant challenges in achieving high gain and bandwidth. This project aims to develop a low-voltage, low-power CMOS operational amplifier that enhances gain and bandwidth while maintaining stability, making it suitable for biomedical applications requiring precise signal amplification.
 
-# Design Specifications:
 
-* Current Mirrors used for gate biasing of current source loads.
-* Golden Current Value ( reference current)
-* Differential Pair with Active Load
-* PMOS with NMOS load
-* Load Capacitance and an additional miller capacitance (Cc) for stability and dominant pole shift.
+
+# PROBLEM STATEMENT:
+
+Low-voltage op-amps often face significant challenges in achieving high gain and wide bandwidth due to the inherent constraints imposed by low supply voltages. These limitations become particularly problematic in high-performance applications such as biomedical signal processing, where accurate and reliable amplification of small signals, like those in ECG monitoring, is crucial. In such cases, achieving both high gain and fast response times is essential to ensure precise signal acquisition and processing, making it critical to overcome these design bottlenecks for effective real-time medical diagnostics.
+
+This project aims to achieve high DC gain by simulating an optimized low-power operational amplifier at a low supply voltage using various MOS technologies in LTSpice. The proposed op-amp is expected to exhibit a superior figure of merit (FOM) compared to existing designs, showcasing enhanced performance.
 
 # Design Description:
 
