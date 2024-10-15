@@ -45,8 +45,7 @@ The use of indirect feedback compensation ensures that the high gain from the co
 
 # The Circuit:
 
-![alt text](https://github.com/nikhil1198/2-Stage-Operational-Amplifier/blob/master/circuit.JPG)
-
+![alt text](https://github.com/user-attachments/assets/b7fe89d5-a35b-4087-a5e1-82c4bfe2f921)
 # Design Calculations:
 
 * Assumptions and Values used:
