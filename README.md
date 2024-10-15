@@ -100,13 +100,6 @@ The power dissipation of the proposed Op-amp is a critical parameter that indica
 
 # Conclusion:
 
-* A common “workhorse” opamp for medium performance applications.
-* A reasonably simple structure with reasonable performance
-* Design issues introduced : Two poles close to each other introduced. Very poor phase margin and instability until high load capacitance used.
-* Hence, the Concept of pole splitting introduced to decrease (shift left ) the dominant pole frequency which introduced because of stage one, causing stability
+This project focuses on the design of a low-power operational amplifier (opamp) optimized for ECG signal amplification. The opamp leverages a composite cascode topology to achieve high gain and output impedance while maintaining stability through indirect feedback compensation. Additionally, subthreshold operation is utilized to minimize power consumption, making it suitable for low-power applications. Operating with a ±0.5V power supply, the opamp is designed for biomedical devices, offering a reliable solution for amplifying weak heart signals with minimal energy consumption.
 
-# Summary:
 
-* A two stage OpAmp is designed with the given specifications. 
-* First, a hand design was done followed by simulation in LTspice IV. The results are in agreement with the required value with a very small trade-off.
-* The trade-off may be due to neglecting body effect or any other transistor in built properties.
