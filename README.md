@@ -46,11 +46,13 @@ The use of indirect feedback compensation ensures that the high gain from the co
 # The Circuit:
 
 ![alt text](https://github.com/user-attachments/assets/b7fe89d5-a35b-4087-a5e1-82c4bfe2f921)
+
 # Design Calculations:
 
 # Gain
 
 The open-loop gain of an op-amp is the amplification provided without any feedback applied to the circuit. The simulation result of the open-loop gain is shown in fig. The open-loop gain of the proposed op-amp is 104.27 dB, demonstrating high amplification capability, which is crucial for accurately amplifying low-amplitude heart signals in the intended medical application.
+
 ![image](https://github.com/user-attachments/assets/30abac5e-c2aa-4092-8ae5-56257a047633)
 
 
@@ -65,21 +67,25 @@ CMRR (dB) = 20log(Ad/Acm)
 # Slew Rate 
 
 The slew rate of an op-amp is the rate of change in output voltage affected by a step-change in the input. The simulation result of the slew rate is shown in fig. The slew rate of the proposed op-amp is 60.51 V/ms. 
+
 ![image](https://github.com/user-attachments/assets/046a21a7-c30f-48ba-abb7-122ba6b1c73a)
 
 # Phase Margin 
 
 The phase margin of an op-amp is a measure of the stability of the amplifier, indicating how close the system is to oscillation. The simulation result of the phase margin is shown in fig. The phase margin of the proposed op-amp is 72 degrees. And gain bandwidth product is 240KHz!
+
 ![image](https://github.com/user-attachments/assets/47d7c6ec-b0ad-4f50-9c51-4536d6dffc0d)
 
 # Gain Margin 
 
 The gain margin of an op-amp represents the amount of gain increase required to bring the system to the verge of instability. The simulation result of the gain margin is shown in fig. The gain margin of the proposed op-amp is 5.2 dB.
+
 ![image](https://github.com/user-attachments/assets/a468c1a4-fb93-4199-9722-ef950639182a)
 
 # Noise performance analysis
 
 The noise performance of the op-amp was evaluated for low-frequency signals. The output noise was measured to be 3.6 uV/Hz½ at 1 Hz, indicating low noise levels suitable for ECG applications. This low output noise ensures minimal distortion when amplifying weak biomedical signals, particularly in the lower frequency range crucial for heart signal processing.
+
 ![image](https://github.com/user-attachments/assets/7bf26eca-5963-4fde-98b5-bcf4ab7504ec)
 
 # Power Dissipation
