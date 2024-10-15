@@ -14,7 +14,7 @@ This project aims to achieve high DC gain by simulating an optimized low-power o
 
 # Design Description:
 
-* Composite Cascode Topology:
+# Composite Cascode Topology:
 A composite cascode structure is used in the opamp to enhance the gain and output impedance. This technique reduces the Miller effect, allowing for better frequency response and bandwidth, critical for the amplification of low-frequency signals like those in ECG (typically around 0.5 Hz to 100 Hz).The cascode arrangement also ensures better voltage headroom, which is important when working with the low supply voltage of ±0.5V.
 
 * Indirect Feedback Compensation:
